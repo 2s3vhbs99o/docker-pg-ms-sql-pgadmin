@@ -1,5 +1,5 @@
 # pgsql and pgadmin
-I use it for virtual environment when I need run Postgres SQL and PG Admin. In my case I use Ubuntu server 20.04. Cheked in redos server (MUROM 7.3.2) with PostgresPro.
+I use it for virtual environment when I need run Postgres SQL and PG Admin. In my case I use Ubuntu server 20.04. Cheked in [redos server](https://redos.red-soft.ru/product/downloads/) with [PostgresPro](https://hub.docker.com/r/chernoskutov/postgres-pro/).
 
 ## Prerequisites
 1. [Git](https://git-scm.com/downloads)
