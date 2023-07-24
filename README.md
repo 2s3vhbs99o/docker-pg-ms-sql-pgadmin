@@ -1,2 +1,2 @@
 # pgsql-pgadmin
-I use it for virtual environments then I need run Postgres SQL and PG Admin.
+I use it for virtual environment when I need run Postgres SQL and PG Admin.
