@@ -9,9 +9,9 @@ I use it for virtual environment when I need run Postgres SQL and PG Admin. In m
 1. From terminal clone git-repo: ``git clone https://github.com/lobanov4real/pgsql-pgadmin.git``
 2. Go to repo folder: ``cd ./pgsql-pgadmin``
 3. Fill variable values in ``.env`` file.
-4. Run docker-compose:
-``old# docker-compose up -d``
-``new# docker compose up -d``
+4. Run docker-compose:  
+``old# docker-compose up -d``  
+``new# docker compose up -d``  
 6. From host open browser and go to PG Admin console: ``http://<ip_of_docker_server>`` and use values from ``$PG_EMAIL`` and ``$PG_PASSWORD`` for login.
 7. In PG Admin console [connect](https://www.pgadmin.org/docs/pgadmin4/development/connecting.html) to Postrges SQL server use values from ``DB_USER`` and ``DB_PASSWORD``. The connection can be possible to the server through the value ``password`` in ``DB_PHAM``. More information about ``POSTGRES_HOST_AUTH_METHOD`` [here](https://hub.docker.com/_/postgres).
 
