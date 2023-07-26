@@ -18,7 +18,7 @@ cd ./pgsql-pgadmin-mssql
 ```
 vi .env
 ```
-For ``MSDB_TAG`` possible values: ``2022-latest, 2019-latest, 2017-latest``, full tag listing [here](https://hub.docker.com/_/microsoft-mssql-server).
+For ``MSDB_TAG`` possible values: ``2022-latest, 2019-latest, 2017-latest``, full tag listing [here](https://hub.docker.com/_/microsoft-mssql-server).  
 4. Run docker-compose:
 ```
 docker compose up -d
