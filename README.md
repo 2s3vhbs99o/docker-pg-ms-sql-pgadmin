@@ -16,11 +16,13 @@ cd ./pgsql-pgadmin-mssql
 ```
 3. Fill variable values in ``.env`` file. For ``MSDB_TAG`` possible values: ``2022-latest, 2019-latest, 2017-latest``. Full Tag Listing [here](https://hub.docker.com/_/microsoft-mssql-server).
 4. Run docker-compose:  
+V1:
 ```
-V1 # docker-compose up -d
+docker-compose up -d
 ```  
+V2:
 ```
-V2 # docker compose up -d
+docker compose up -d
 ```  
 6. From host open browser and go to PG Admin console: ``http://<ip_of_docker_server>`` and use values from ``$PG_EMAIL`` and ``$PG_PASSWORD`` for login.
 7. In PG Admin console [connect](https://www.pgadmin.org/docs/pgadmin4/development/connecting.html) connect to Postrges SQL server use values from ``DB_USER`` and ``DB_PASSWORD``. The connection can be possible to the server through the value ``password`` in ``DB_PHAM``. More information about ``POSTGRES_HOST_AUTH_METHOD`` [here](https://hub.docker.com/_/postgres).
