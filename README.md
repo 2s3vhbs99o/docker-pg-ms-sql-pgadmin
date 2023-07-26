@@ -14,7 +14,7 @@ git clone https://github.com/lobanov4real/pgsql-pgadmin-mssql.git
 ```
 cd ./pgsql-pgadmin-mssql
 ```
-3. Fill variable values in ``.env`` file. For MSDB_TAG possible values: 2022-latest, 2019-latest, 2017-latest. Full Tag Listing [here](https://hub.docker.com/_/microsoft-mssql-server).
+3. Fill variable values in ``.env`` file. For ``MSDB_TAG`` possible values: ``2022-latest, 2019-latest, 2017-latest``. Full Tag Listing [here](https://hub.docker.com/_/microsoft-mssql-server).
 4. Run docker-compose:  
 ```
 V1 # docker-compose up -d
