@@ -12,7 +12,7 @@ git clone https://github.com/lobanov4real/pgsql-pgadmin-mssql.git
 ```
 2. Go to repo folder: 
 ```
-cd ./pgsql-pgadmin
+cd ./pgsql-pgadmin-mssql
 ```
 3. Fill variable values in ``.env`` file.
 4. Run docker-compose:  
