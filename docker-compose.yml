@@ -35,6 +35,7 @@ services:
     restart: always
     volumes:
       - ~/mssql:/var/opt/mssql/data
+    user: "0:0"
     environment:
       - ACCEPT_EULA=Y
       - MSSQL_SA_PASSWORD=$MSDB_PASSWORD
