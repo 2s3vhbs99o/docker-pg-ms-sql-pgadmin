@@ -3,7 +3,7 @@ I use it for virtual environment when I need run Postgres SQL, PG Admin and MS S
 
 ## Prerequisites
 1. [Git](https://git-scm.com/downloads)
-2. [Docker](https://docs.docker.com/desktop/)
+2. [Docker]([https://docs.docker.com/desktop/](https://github.com/lobanov4real/installation-guiedes/blob/main/install_docker_ubuntu_20-04.md))
 
 ## How to use
 
