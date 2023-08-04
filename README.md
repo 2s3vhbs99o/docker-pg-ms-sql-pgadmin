@@ -1,6 +1,6 @@
 # pgsql, pgadmin and mssql
 
-I use it for virtual environment when I need run Postgres SQL, PG Admin and MS SQL Express. In my case I use Ubuntu server 20.04. Cheked in last (7.3.2) [Redos server](https://redos.red-soft.ru/product/downloads/) with [PostgresPro](https://hub.docker.com/r/chernoskutov/postgres-pro/).
+I use it for virtual environment when I need run Postgres SQL, PG Admin and MS SQL Express. In my case I use Ubuntu server 20.04. Checked in last (7.3.2) [Redos server](https://redos.red-soft.ru/product/downloads/) with [PostgresPro](https://hub.docker.com/r/chernoskutov/postgres-pro/).
 
 ## Prerequisites
 
