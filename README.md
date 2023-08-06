@@ -1,4 +1,4 @@
-# pgsql, pgadmin and mssql
+# Postgres SQL, PG Admin and MS SQL
 
 I use it for virtual environment when I need run Postgres SQL, PG Admin and MS SQL Express. In my case I use Ubuntu server 20.04. Checked in last (7.3.2) [Redos server](https://redos.red-soft.ru/product/downloads/) with Postgres and PostgresPRO.
 
@@ -21,7 +21,12 @@ I use it for virtual environment when I need run Postgres SQL, PG Admin and MS S
     cd ./pgsql-pgadmin-mssql
     ```
 
-3. Fill variable values in ``.env`` file. For ``MSDB_TAG`` possible values: ``2022-latest, 2019-latest, 2017-latest``, full tag listing [here](https://hub.docker.com/_/microsoft-mssql-server).
+3. Fill variable values in ``.env`` file.
+
+    * For MS SQL:
+        * For ``MSDB_TAG`` possible values: ``2022-latest, 2019-latest, 2017-latest``, full tag listing [here](https://hub.docker.com/_/microsoft-mssql-server).
+        * MSSQL_PID: Evaluation, Developer, Express, Web, Standard, Enterprise or A product key: #####-#####-#####-#####-#####
+        * TZ (time zone) the list of time zone for Linux [here](<https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List>)
 
     ```bash
     vi .env
