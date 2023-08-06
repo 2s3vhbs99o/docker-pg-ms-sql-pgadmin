@@ -41,6 +41,7 @@ services:
       - ACCEPT_EULA=Y
       - MSSQL_SA_PASSWORD=$MSDB_PASSWORD
       - MSSQL_PID=Express
+      - PAL_PROGRAM_INFO=1
       - TZ=Europe/Moscow
     ports:
       - protocol: tcp
