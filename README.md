@@ -1,7 +1,7 @@
 # Postgres SQL, PG Admin and MS SQL
 
 I use it for virtual environment when I need run Postgres SQL, PG Admin and MS SQL Express. In my case I use Ubuntu server 20.04 for docker host.
-Checked in last (7.3.2) [Redos server](https://redos.red-soft.ru/product/downloads/) with Postgres and PostgresPRO.
+Checked in last (7.3.2) [Redos server](https://redos.red-soft.ru/product/downloads/) with Postgres and PostgresPRO.``
 
 ## Prerequisites
 
@@ -25,9 +25,9 @@ Checked in last (7.3.2) [Redos server](https://redos.red-soft.ru/product/downloa
 3. Fill variable values in ``.env`` file.
 
     * For MS SQL:
-        * ``MSDB_TAG`` possible values: ``2022-latest, 2019-latest, 2017-latest``, full tag listing [here](https://hub.docker.com/_/microsoft-mssql-server).
-        * ``MSDB_PASSWORD`` is a password for MS SQL sysadmin - ``SA``.
-        * ``MSSQL_PID`` possible values: ``Evaluation, Developer, Express, Web, Standard, Enterprise or A product key: #####-#####-#####-#####-#####``.
+        * *MSDB_TAG* possible values: *2022-latest, 2019-latest, 2017-latest*, full tag listing [here](https://hub.docker.com/_/microsoft-mssql-server).
+        * *MSDB_PASSWORD* is a password for MS SQL sysadmin - SA.
+        * *MSSQL_PID* possible values: *Evaluation, Developer, Express, Web, Standard, Enterprise or A product key: #####-#####-#####-#####-#####*.
         * ``TZ`` a time zone for container, the list of time zones [here](<https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List>).
 
     ```bash
