@@ -24,9 +24,10 @@ I use it for virtual environment when I need run Postgres SQL, PG Admin and MS S
 3. Fill variable values in ``.env`` file.
 
     * For MS SQL:
-        * For ``MSDB_TAG`` possible values: ``2022-latest, 2019-latest, 2017-latest``, full tag listing [here](https://hub.docker.com/_/microsoft-mssql-server).
-        * MSSQL_PID: Evaluation, Developer, Express, Web, Standard, Enterprise or A product key: #####-#####-#####-#####-#####
-        * TZ (time zone) the list of time zone for Linux [here](<https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List>)
+        * ``MSDB_TAG`` possible values: ``2022-latest, 2019-latest, 2017-latest``, full tag listing [here](https://hub.docker.com/_/microsoft-mssql-server).
+        * ``MSDB_PASSWORD`` is a password for MS SQL sysadmin - ``SA``.
+        * ``MSSQL_PID`` possible values: ``Evaluation, Developer, Express, Web, Standard, Enterprise or A product key: #####-#####-#####-#####-#####``.
+        * ``TZ`` a time zone for container, the list of time zones [here](<https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List>).
 
     ```bash
     vi .env
