@@ -28,7 +28,7 @@ Checked in last (7.3.2) [Redos server](https://redos.red-soft.ru/product/downloa
         * *MSDB_TAG* possible values: *2022-latest, 2019-latest, 2017-latest*, full tag listing [here](https://hub.docker.com/_/microsoft-mssql-server).
         * *MSDB_PASSWORD* is a password for MS SQL sysadmin - SA.
         * *MSSQL_PID* possible values: *Evaluation, Developer, Express, Web, Standard, Enterprise or A product key: #####-#####-#####-#####-#####*.
-        * ``TZ`` a time zone for container, the list of time zones [here](<https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List>).
+        * *TZ* a time zone for container, the list of time zones [here](<https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List>).
 
     ```bash
     vi .env
