@@ -41,15 +41,17 @@ services:
     volumes:
       - ~/mssqlvol/data:/var/opt/mssql/data
       - ~/mssqlvol/data/log/errorlog:/var/opt/mssql/log/errorlog
-      - ~/mssqlvol/mssql.conf:/var/opt/mssql/mssql.conf
-      - ~/mssqlvol/certs/mssql.pem:/etc/ssl/certs/mssql.pem
-      - ~/mssqlvol/certs/mssql.key:/etc/ssl/private/mssql.key
+      - ./files/mssql.conf:/var/opt/mssql/mssql.conf
+      - ./files/mssql.pem:/etc/ssl/certs/mssql.pem
+      - ./files/mssql.key:/etc/ssl/private/mssql.key
     # user: "0:0"
     environment:
       - ACCEPT_EULA=Y
       - MSSQL_SA_PASSWORD=$SA_PASSWORD
       - MSSQL_PID=$MS_PID
       - TZ=$MS_TZ
+    cap_add:
+      - SYS_PTRACE
     ports:
       - protocol: tcp
         published: 1433
