@@ -50,4 +50,6 @@ services:
 
 volumes:
   mssqlvol:
+    name: mssqlvol
   pgsqlvol:
+    name: pgsqlvol
