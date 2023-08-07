@@ -39,14 +39,18 @@ services:
     user: "0:0"
     environment:
       - ACCEPT_EULA=Y
-      - MSSQL_SA_PASSWORD=$MSDB_PASSWORD
-      - MSSQL_PID=Express
-      - TZ=Europe/Moscow
+      - MSSQL_SA_PASSWORD=$SA_PASSWORD
+      - MSSQL_PID=$MS_PID
+      - PAL_PROGRAM_INFO=1
+      - TZ=$MS_TZ
     ports:
       - protocol: tcp
         published: 1433
         target: 1433
+<<<<<<< HEAD
 
 volumes:
   mssqlvol:
   pgsqlvol:
+=======
+>>>>>>> 358d0638d9f92ba15b0c86bbb51c11e825fef602
