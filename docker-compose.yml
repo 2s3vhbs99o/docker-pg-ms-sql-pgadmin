@@ -64,6 +64,8 @@ volumes:
     name: mssqlvol
   pgsqlvol:
     name: pgsqlvol
+  files:
+    name: files
 
 networks:
   sql:
