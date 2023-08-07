@@ -16,6 +16,8 @@ services:
       - protocol: tcp
         published: 5432
         target: 5432
+    networks:
+      - sql
 
   pgadmin4:
     container_name: pgadmin
@@ -28,6 +30,8 @@ services:
       - protocol: tcp
         published: 80
         target: 80
+    networks:
+      - sql
 
   mssql:
     container_name: mssql
@@ -47,9 +51,15 @@ services:
       - protocol: tcp
         published: 1433
         target: 1433
+    networks:
+      - sql
 
 volumes:
   mssqlvol:
     name: mssqlvol
   pgsqlvol:
     name: pgsqlvol
+
+networks:
+  sql:
+    name: sql
