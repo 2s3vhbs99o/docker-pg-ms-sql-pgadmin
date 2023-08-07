@@ -45,7 +45,6 @@ services:
       - ACCEPT_EULA=Y
       - MSSQL_SA_PASSWORD=$SA_PASSWORD
       - MSSQL_PID=$MS_PID
-      - PAL_PROGRAM_INFO=1
       - TZ=$MS_TZ
     ports:
       - protocol: tcp
