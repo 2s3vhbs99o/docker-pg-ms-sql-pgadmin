@@ -47,10 +47,7 @@ services:
       - protocol: tcp
         published: 1433
         target: 1433
-<<<<<<< HEAD
 
 volumes:
   mssqlvol:
   pgsqlvol:
-=======
->>>>>>> 358d0638d9f92ba15b0c86bbb51c11e825fef602
