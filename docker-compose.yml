@@ -7,7 +7,7 @@ services:
     image: postgres:$DB_TAG
     restart: always
     volumes:
-      - pgsqlvol:/var/lib/postgresql/data
+      - ~/pgsqlvol:/var/lib/postgresql/data
     environment:
       - POSTGRES_USER=$DB_USER
       - POSTGRES_PASSWORD=$DB_PASSWORD
@@ -39,7 +39,7 @@ services:
     restart: always
     hostname: mssql
     volumes:
-      - mssqlvol:/var/opt/mssql/data
+      - ~/mssqlvol:/var/opt/mssql/data
     user: "0:0"
     environment:
       - ACCEPT_EULA=Y
