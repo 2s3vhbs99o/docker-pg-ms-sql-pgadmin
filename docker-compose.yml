@@ -40,7 +40,6 @@ services:
     hostname: mssql
     volumes:
       - ~/sqldata/mssqlvol/data:/var/opt/mssql/data
-    #  - ~/mssqlvol/data/log:/var/opt/mssql/log
       - ./files/mssql.conf:/var/opt/mssql/mssql.conf
       - ./flies/mssql.crt:/var/opt/mssql/security/ca-certificates/mssql.crt
       - ./files/mssql.pem:/etc/ssl/certs/mssql.pem
