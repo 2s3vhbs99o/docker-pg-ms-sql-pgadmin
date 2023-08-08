@@ -7,7 +7,7 @@ services:
     image: postgres:$DB_TAG
     restart: always
     volumes:
-      - ~/pgsqlvol:/var/lib/postgresql/data
+      - ~/sqldata/pgsqlvol:/var/lib/postgresql/data
     environment:
       - POSTGRES_USER=$DB_USER
       - POSTGRES_PASSWORD=$DB_PASSWORD
@@ -39,7 +39,7 @@ services:
     restart: always
     hostname: mssql
     volumes:
-      - ~/mssqlvol/data:/var/opt/mssql/data
+      - ~/sqldata/mssqlvol/data:/var/opt/mssql/data
     #  - ~/mssqlvol/data/log:/var/opt/mssql/log
       - ./files/mssql.conf:/var/opt/mssql/mssql.conf
       - ./flies/mssql.crt:/var/opt/mssql/security/ca-certificates/mssql.crt
