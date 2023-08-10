@@ -1,5 +1,17 @@
 version: '3.9'
 
+volumes:
+  mssqlvol:
+    name: mssqlvol
+  pgsqlvol:
+    name: pgsqlvol
+  files:
+    name: files
+
+networks:
+  sql:
+    name: sql
+
 services:
 
   postgres:
@@ -58,15 +70,3 @@ services:
         target: 1433
     networks:
       - sql
-
-volumes:
-  mssqlvol:
-    name: mssqlvol
-  pgsqlvol:
-    name: pgsqlvol
-  files:
-    name: files
-
-networks:
-  sql:
-    name: sql
