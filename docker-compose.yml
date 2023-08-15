@@ -53,7 +53,7 @@ services:
     volumes:
       - ~/sqldata/mssqlvol/data:/var/opt/mssql/data
       - ./files/mssql.conf:/var/opt/mssql/mssql.conf
-      - ./flies:/var/opt/mssql/security/ca-certificates
+      - ./files:/var/opt/mssql/security/ca-certificates
       - ./files/mssql.pem:/etc/ssl/certs/mssql.pem
       - ./files/mssql.key:/etc/ssl/private/mssql.key
     user: "0:0"
