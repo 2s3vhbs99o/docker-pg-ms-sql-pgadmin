@@ -26,7 +26,7 @@ services:
       - POSTGRES_HOST_AUTH_METHOD=$DB_PHAM
     ports:
       - protocol: tcp
-        published: 5432
+        published: 5532
         target: 5432
     networks:
       - sql
