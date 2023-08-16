@@ -25,7 +25,7 @@ Checked in last (7.3.2) [Redos server](https://redos.red-soft.ru/product/downloa
 3. Fill variable values in **.env** file.
 
     ```bash
-    vi .env
+    vim .env
     ```
 
     * For MS SQL:
