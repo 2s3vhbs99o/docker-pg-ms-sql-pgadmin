@@ -43,7 +43,7 @@ Checked in last (7.3.2) [Redos server](https://redos.red-soft.ru/product/downloa
         * `MSSQL_PID` possible values: `Evaluation, Developer, Express, Web, Standard, Enterprise or A product key: #####-#####-#####-#####-#####`.
         * `TZ` a time zone for container, the list of time zones [here](<https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List>).<p>
 
-4. Issue certificate for MS SQL docker container and convert it to crt for ca-certificates:
+4. Issue certificate for MS SQL docker container and convert `.pem` to `.crt` for ca-certificates:
 
     ```shell
     sudo openssl req -x509 -nodes -newkey rsa:2048 -subj '/CN=mssql' -keyout  ./files/mssql.key -out  ./files/mssql.pem -days 365
