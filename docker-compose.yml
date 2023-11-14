@@ -30,6 +30,23 @@ services:
     networks:
       - sql
 
+  postgres16:
+    container_name: postgres16
+    image: postgres:$DB_TAG16
+    restart: always
+    volumes:
+      - ~/sqldata/pgsqlvol16:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_USER=$DB_USER_16
+      - POSTGRES_PASSWORD=$DB_PASSWORD_16
+      - POSTGRES_HOST_AUTH_METHOD=$DB_PHAM_16
+    ports:
+      - protocol: tcp
+        published: 5632
+        target: 5632
+    networks:
+      - sql
+
   pgadmin4:
     container_name: pgadmin
     image: dpage/pgadmin4:$PG_TAG
