@@ -5,28 +5,28 @@ Checked in last (7.3.2) [Redos server](https://redos.red-soft.ru/product/downloa
 
 ## Prerequisites
 
-1. [Git](https://git-scm.com/downloads)
-2. [Docker in Ubuntu 20.04](https://github.com/lobanov4real/installation-guiedes/blob/main/install_docker_ubuntu_20-04.md)
+- [Git](https://git-scm.com/downloads)
+- [Docker in Ubuntu 20.04](https://github.com/lobanov4real/installation-guiedes/blob/main/install_docker_ubuntu_20-04.md)
 
 ## How to use
 
-1. From terminal clone git-repo:
+**Clone git-repo**
 
-    ```shell
-    git clone https://github.com/lobanov4real/pgsql-pgadmin-mssql.git
-    ```
+```shell
+git clone https://github.com/lobanov4real/pgsql-pgadmin-mssql.git
+```
 
-2. Go to repo folder:
+**Go to repo folder**
 
-    ```shell
-    cd ./pgsql-pgadmin-mssql
-    ```
+```shell
+cd ./pgsql-pgadmin-mssql
+```
 
-3. Fill variable values in **.env** file.
+**Fill variable values in **.env** file**
 
-    ```shell
-    vim .env
-    ```
+```shell
+vim .env
+```
 
     * For Postgres:
         * `DB_TAG` is `latest`. Possible values [here](https://hub.docker.com/_/postgres).
@@ -43,17 +43,19 @@ Checked in last (7.3.2) [Redos server](https://redos.red-soft.ru/product/downloa
         * `MSSQL_PID` possible values: `Evaluation, Developer, Express, Web, Standard, Enterprise or A product key: #####-#####-#####-#####-#####`.
         * `TZ` a time zone for container, the list of time zones [here](<https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List>).
 
-4. Run docker-compose:
+**Run docker-compose**
 
-    ```shell
-    docker compose up -d
-    ```
+```shell
+docker compose up -d
+```
 
-5. In browser open **PG Admin** console: [http://<ip_of_docker_server>](https://github.com/lobanov4real/pgsql-pgadmin-mssql/blob/master/README.md#how-to-use) and use values from `$PG_EMAIL` and `$PG_PASSWORD` for login.
+**Open PG Admin console**
 
-6. In **PG Admin** console [connect](https://www.pgadmin.org/docs/pgadmin4/development/connecting.html) to Postrges SQL server use default db `postgres` and values from `$DB_USER` and `$DB_PASSWORD`. The connection can be possible to the server through the value ``password`` in `$DB_PHAM`.
+- In browser open **PG Admin** console: [http://<ip_of_docker_server>](https://github.com/lobanov4real/pgsql-pgadmin-mssql/blob/master/README.md#how-to-use) and use values from `$PG_EMAIL` and `$PG_PASSWORD` for login.
 
-7. In [MS SSMS](https://learn.microsoft.com/ru-ru/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16) connect to MS SQL server use default user `SA` and password from value `$SA_PASSWORD`.
+- In **PG Admin** console [connect](https://www.pgadmin.org/docs/pgadmin4/development/connecting.html) to Postrges SQL server use default db `postgres` and values from `$DB_USER` and `$DB_PASSWORD`. The connection can be possible to the server through the value ``password`` in `$DB_PHAM`.
+
+- In [MS SSMS](https://learn.microsoft.com/ru-ru/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16) connect to MS SQL server use default user `SA` and password from value `$SA_PASSWORD`.
 
 ## License
 
