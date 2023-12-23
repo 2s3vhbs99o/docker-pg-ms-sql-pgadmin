@@ -28,16 +28,16 @@ cd ./pgsql-pgadmin-mssql
 vim .env
 ```
 
-    * For Postgres:
+   * For Postgres:
         * `DB_TAG` is `latest`. Possible values [here](https://hub.docker.com/_/postgres).
         * `DB_USER` provide a superuser
         * `DB_PASSWORD` is a password for superuser
         * `DB_PHAM` is `POSTGRES_HOST_AUTH_METHOD`. More information about it [here](https://hub.docker.com/_/postgres).
-    * For PG Admin:
+   * For PG Admin:
         * `PG_TAG` is `latest`. Possible values [here](https://www.pgadmin.org/docs/pgadmin4/latest/container_deployment.html)
         * `PG_EMAIL` provide a login email.
         * `PG_PASSWORD` provide a password for login.
-    * For MS SQL:
+   * For MS SQL:
         * `MSDB_TAG` possible values: `2022-latest, 2019-latest, 2017-latest`, full tag listing [here](https://hub.docker.com/_/microsoft-mssql-server).
         * `MSDB_PASSWORD` is a password for MS SQL sysadmin - `SA`.
         * `MSSQL_PID` possible values: `Evaluation, Developer, Express, Web, Standard, Enterprise or A product key: #####-#####-#####-#####-#####`.
