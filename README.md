@@ -6,14 +6,14 @@ Checked in last (7.3.2) [Redos server](https://redos.red-soft.ru/product/downloa
 ## Prerequisites
 
 - [Git](https://git-scm.com/downloads)
-- [Docker in Ubuntu 20.04](https://github.com/lobanov4real/installation-guiedes/blob/main/install_docker_ubuntu_20-04.md)
+- [Docker](https://docs.docker.com/get-docker/)
 
 ## How to use
 
 **Clone git-repo**
 
 ```shell
-git clone https://github.com/lobanov4real/pgsql-pgadmin-mssql.git
+git clone git@github.com:2s3vhbs99o/docker-pg-ms-sql-pgadmin.git
 ```
 
 **Go to repo folder**
