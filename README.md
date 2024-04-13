@@ -13,7 +13,7 @@ Checked in last (7.3.2) [Redos server](https://redos.red-soft.ru/product/downloa
 **Clone git-repo**
 
 ```shell
-git clone git@github.com:2s3vhbs99o/docker-pg-ms-sql-pgadmin.git
+git clone https://github.com/2s3vhbs99o/docker-pg-ms-sql-pgadmin.git
 ```
 
 **Go to repo folder**
